@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 0.211em;
+    font-size: 34px;
+}
+
+/*Mobile Screen */
+@media (max-aspect-ratio: 16/9) {
+    h1 {
+        line-height: 2;
+        letter-spacing: 0.111em;
+        font-size: 24px;
+    }
+}
+/*Mobile Screen */
+
+header {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: 0.1s linear;
+}
