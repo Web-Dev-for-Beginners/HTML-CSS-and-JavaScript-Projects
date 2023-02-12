@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 10px;
+    background: url("images/background.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+.head-box {
+    display: flex;
+    flex: 1;
+    margin-top: 110px;
+    margin-left: 28%;
+    align-items: center;
+    justify-content: center;
+    border: .4rem solid black;
+    border-radius: .5rem;
+    font-size: 4rem;
+    width: 70rem;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    text-shadow: 0 0 .5rem black;
+}
+
+.keys {
+    display: flex;
+    flex: 1;
+    margin-top: 140px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.key {
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all 0.7s ease;
+    width: 10rem;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.849);
+    text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+    /*CSS to use when button is pressed*/
+    transform: scale(1.1);
+    /*increase size of box when hit*/
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+    display: block;
+    font-size: 4rem;
+}
+
+.sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #ffc600;
+}
