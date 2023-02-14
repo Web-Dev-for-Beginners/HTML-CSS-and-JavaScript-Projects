@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Roboto:ital,wght@1,500&display=swap');
+
+:root {
+    --main-bg-color: brown;
+    --font1: 'Roboto', sans-serif;
+    --font2: 'Baloo Tamma 2', cursive;
+}
+
+.font1 {
+    font-family: var(--font1);
+}
+
+.font2 {
+    font-family: var(--font2);
+}
+
+.max-width-1 {
+    max-width: 80vw;
+
+}
+
+.max-width-2 {
+    max-width: 60vw;
+
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.btn {
+    padding: 0px 15px;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-family: var(--font1);
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    color: white;
+    background-color: black;
+
+}
+
+.form-input {
+    padding: 0px 2px;
+    padding-top: 2px;
+    font-size: 16px;
+    border: 3px solid black;
+    border-radius: 4px;
+    margin: 0 14px;
+    font-family: var(--font1);
+
+}
