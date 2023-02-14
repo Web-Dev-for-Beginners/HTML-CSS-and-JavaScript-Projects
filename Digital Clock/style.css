@@ -1,64 +1,117 @@
+/*  #222831 -- darkest blue
+    #30475e -- medium blue
+    #f2a365 -- orange peace for headings or underlines 
+    #ececec -- white compulsory
+*/
+/*import analog clock css*/
 *{
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0%;
+  padding: 0%;
+}
+body{
+  background-color: #222831;
+  margin: 0;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  
+}
 
-  /* body styling*/
 
-  body{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #10101E;
+
+.main {
+  margin-top: 50px; 
+}
+.navigation_bar{
+  margin-top: 70px; 
+}
+header {
+  width: 100%;
+  padding: 40px 16px;
+  background-color: #222831;
+  color: #f1f1f1;
+  text-align: center;
   }
-  /* various properties of datetime container */
-  .datetime{
-    color: #fff;
-    background: #10101E;
-    font-family: "Segoe UI", sans-serif;
-    width: 340px;
-    padding: 15px 10px;
-    border: 3px solid #2E94E3;
-    border-radius: 5px;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
-    transition: 0.5s;
-    transition-property: background, box-shadow;
-  }
-  /* Hover effect */
-  .datetime:hover{
-    background: #2E94E3;
-    box-shadow: 0 0 30px #2E94E3;
-  }
-  
-  .date{
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-    letter-spacing: 3px;
-  }
-  
-  .time{
-    font-size: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .time span:not(:last-child){
-    position: relative;
-    margin: 0 6px;
-    font-weight: 600;
-    text-align: center;
-    letter-spacing: 3px;
-  }
-  
-  .time span:last-child{
-    background: #2E94E3;
-    font-size: 30px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-top: 10px;
-    padding: 0 5px;
-    border-radius: 3px;
-  }
+.underline{
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: #f2a365;
+}
+.box{
+  display:grid;
+  justify-content: center;
+  margin:15px;
+  font-size: 20px;
+}
+.box select{
+  background: #2f3640;
+  color: antiquewhite;
+  padding: 10px;
+  width: 250px;
+  margin-top: 5px;
+  font-size: 15px;
+  border: none;
+  border-radius: 7pt;
+  outline: none;
+  z-index:1;
+}
+p{
+  text-align: center;
+  font-size: 25px;
+}
+/*Analog clock styling*/
+#clock{
+  width: 35%;
+  margin: auto;
+  margin-top: 50px;
+  font-size: 2.5em;
+  border: 2px solid white;
+  align-items: center;
+  text-align: center;
+  color: white;
+  width: 250px;
+  height: 78px;
+  min-width: 6em;
+}
+
+
+
+
+#clock{
+  font-family: "Segoe UI", sans-serif;
+  width: 340px;
+  padding: 15px 10px;
+  border: 3.5px solid #2E94E3;
+  border-radius: 7px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+  transition: 0.5s;
+  transition-property: background, box-shadow;
+}
+
+#clock:hover{
+  background: #2E94E3;
+  box-shadow: 0 0 30px #2E94E3;
+}
+
+#watch{
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-left: 700px;
+  margin-top: 150px;
+  border-radius: 10px;
+background-color:#f9b6d3 ;
+border: 3px solid #2E94E3;
+color: #f1f1f1;
+font-family: sans-serif;
+font-size: 20px;
+text-decoration: none;
+text-transform: capitalize;
+background-color: #f9b6d3;
+}
+
+#watch:hover{
+background: #2E94E3;
+color: white;
+cursor: pointer;
+}

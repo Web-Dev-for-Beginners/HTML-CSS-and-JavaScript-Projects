@@ -18,5 +18,9 @@ I have learned represantation of live clock and date within day.
 HTML,CSS,JS.
 
 # Working Video of my project
-https://user-images.githubusercontent.com/84792579/216810016-7425c3af-fdd5-4a1d-929f-ee52f0c5942d.mp4
+https://user-images.githubusercontent.com/84792579/218703745-d44b1c36-f42a-457c-9a3c-97cd0e8b5758.mp4
+
+
+
+
 
