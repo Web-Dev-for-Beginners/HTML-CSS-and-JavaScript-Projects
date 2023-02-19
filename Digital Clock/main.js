@@ -6,7 +6,7 @@ function showTime() {
 
 	checkDropdown = document.getElementById("list").value; // getting the value of the selected country
 
-	var session = "";
+	var session = "PM";
 
 	if (checkDropdown == "india") {
 		nd = new Date(utc + 3600000 * 5.5); // create new object of the date according to chosen country
