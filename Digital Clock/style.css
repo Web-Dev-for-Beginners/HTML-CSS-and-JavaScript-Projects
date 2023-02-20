@@ -108,6 +108,13 @@ font-size: 30px;
 text-decoration: none;
 text-transform: capitalize;
 background-color: #f9b6d3;
+text-decoration: none;
+}
+a:link,
+a:visited,
+a:hover,
+a:active{
+  text-decoration: none;
 }
 
 #watch:hover{
