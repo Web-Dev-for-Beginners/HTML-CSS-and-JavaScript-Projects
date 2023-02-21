@@ -195,18 +195,20 @@ header .cart svg{
 }
 
 .section-3-offers {
+    
     width: 230px;
-    height: 100%;
-    background-image: url('https://rukminim1.flixcart.com/fk-p-flap/278/278/image/1e483f8045ec13a8.jpg?q=90');
+    height: 210px;
+    padding: 28px 20px 124px;
+    background-image: url('./Media/Elec_dash/bottom.png');
+    background-size: calc(100%);
     background-position: bottom;
     background-repeat: no-repeat;
 }
 
 .section-3-offers-viewall {
-    margin-top: 132px;
+    margin-top: 75px;
     width: 100%;
-    font-size: 30px;
-    line-height: 1.38;
+    font-size: 26px;
     font-weight: 400;
     display: flex;
     flex-direction: column;
@@ -214,7 +216,7 @@ header .cart svg{
 }
 
 .section-3-offers-viewall button {
-    margin-top: 24px;
+    margin-top: 35px;
     height: 40px;
     padding: 10px 20px;
     background-color: var(--primary-color);
@@ -224,4 +226,58 @@ header .cart svg{
     font-size: 13px;
     font-weight: 500;
     cursor: pointer;
+}
+
+.section-3-list {
+    height: 100%;
+    width: calc(100% - 230px);
+    display: flex;
+    overflow-x: auto;
+}
+
+.section-3-item {
+    width: 232px;
+    height: 100%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-3-item img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.section-3-item-head {
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.section-3-item-price {
+    margin-top: 12px;
+    font-size: 16px;
+    color: #388e3c;
+}
+
+.section-3-item-explore {
+    opacity: 0.6;
+    margin-top: 12px;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+
+/* section 4  */
+.section-4 {
+    /* check margin-top  */
+    margin-top: 118px;       
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-4 img {
+    width: 33%;
 }
