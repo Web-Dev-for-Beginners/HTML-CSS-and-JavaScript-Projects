@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #EA4D67, #2E035F);
+    height: 100%;
+    margin: 3% 8%;
+    display: grid;
+    place-items: center;
+}
+
+.main_box {
+    padding: 20px;
+    border-radius: 15px;
+    background: #fff;
+    border-top: #EA4D67;
+    box-shadow: 0 20px 35px rgba(149, 164, 224, 0.5);
+}
+
+.main_title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 44px;
+    text-align: center;
+    font-weight: bolder;
+    color: #2E035F;
+}
+
+.steps_title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.steps_desc {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.mywork {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    text-align: center;
+    font-weight: bolder;
+    color: #EA4D67;
+}
+
+.mywork span {
+    font-size: 30px;
+    color: #2E035F;
+}
+
+.mywork i {
+    color: red;
+}
+
+.popup {
+    position: absolute;
+    top: -25%;
+    visibility: hidden;
+    left: 50%;
+    width: 490px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 13px 17px 20px;
+    background: #fff;
+    display: flex;
+    border: 3px solid #EA4D67;
+    transform: translateX(-50%);
+    box-shadow: 0 10px 25px rgba(52, 87, 220, 0.1);
+    transition: all 0.25s ease;
+}
+
+.popup.show {
+    top: 0;
+    visibility: visible;
+}
+
+.popup.online {
+    border: 3px solid #2ECC71;
+}
+
+.popup .icon i {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    color: #fff !important;
+    font-size: 1.2rem;
+    align-items: center;
+    margin-right: 15px;
+    justify-content: center;
+    border-radius: 50%;
+    background: #EA4D67;
+}
+
+.popup.online .icon i {
+    background: #2ECC71;
+}
+
+.popup .title {
+    font-size: 1.2rem;
+    color: #2E035F;
+}
+
+.popup .desc {
+    color: #474747;
+    margin: 3px 0 10px;
+    font-size: 1.04rem;
+}
+
+.popup .reconnect {
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 9px 15px;
+    border-radius: 4px;
+    background: linear-gradient(135deg, #EA4D67, #2E035F);
+}
+
+.popup.online .reconnect {
+    background: #bfbfbf;
+    pointer-events: none;
+}
+
+@media screen and (max-width:550px) {
+    .popup {
+        width: 100%;
+        padding: 10px 15px 17px;
+    }
+}
