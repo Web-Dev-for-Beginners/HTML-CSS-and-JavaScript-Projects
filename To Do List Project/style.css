@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Metal+Mania&display=swap');
- :root{
-	--gradient:linear-gradient(
-		45deg,#8f179a,#e047b2,#f07c97,#f08660,#d29c37,#b67714);
-	} 
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Metal+Mania&family=Roboto:wght@500&display=swap');
+ 
 
 *{
 	margin: 0;
@@ -11,20 +8,11 @@
 }
  body{    /* backgroung image added with linear gradient */
 	
-	background-image: var(--gradient);
-	background-size: 400%;
-	height: 100vh;
-	animation:bg-animation 5s infinite alternate;
+	background-color: #091626;
+	
 }
 
-@keyframes bg-animation {
-	0% {
-		background-position: left;
-	}
-	100% {
-		background-position: right;
-	}
-}
+
 #a{
 	color: beige;
 }	
@@ -72,11 +60,15 @@ h2{
 	color: #fff;
 	font-family: 'Courgette', cursive;
 font-family: 'Metal Mania', cursive;
+font-family: 'Roboto', sans-serif;
+
 }
 h3{
 	font-size: 28px;
 	/* text-transform: uppercase; */
-	font-style: italic;
+	font-family: 'Courgette', cursive;
+font-family: 'Metal Mania', cursive;
+font-family: 'Roboto', sans-serif;
 	text-align: center;
 	color: #fff;
 	
@@ -84,15 +76,19 @@ h3{
 ol{
 	list-style: none;
 	counter-reset: my-counter;
+	
 }
 ol li{
 	width: 100%;
 	padding: 18px;
 	margin: 5px 0;
+	border-style: solid;
+  border-color: rgb(232, 240, 238);
 	background: #e96969bb;
 	background: linear-gradient(45deg, #f46021,#d5a523);
 	font-size: 22px;
 	counter-increment: my-counter;
+	
 }
 ol.Completed li{
 	background: #00ff62;
