@@ -271,13 +271,86 @@ header .cart svg{
 
 
 /* section 4  */
-.section-4 {
-    /* check margin-top  */
-    margin-top: 118px;       
+.section-4-container {
+    margin-top: 8px;
+    height: 362px;
+    background-color: white;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.section-4 img {
-    width: 33%;
+.section-4-offers {
+    
+    width: 230px;
+    height: 210px;
+    padding: 28px 20px 124px;
+    background-image: url('./Media/Beauty/b_bottom.png');
+    background-size: calc(100%);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.section-4-offers-viewall {
+    margin-top: 75px;
+    width: 100%;
+    font-size: 26px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-4-offers-viewall button {
+    margin-top: 35px;
+    height: 40px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    border:none;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.section-4-list {
+    height: 100%;
+    width: calc(100% - 230px);
+    display: flex;
+    overflow-x: auto;
+}
+
+.section-4-item {
+    width: 232px;
+    height: 100%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-4-item img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.section-4-item-head {
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.section-4-item-price {
+    margin-top: 12px;
+    font-size: 16px;
+    color: #388e3c;
+}
+
+.section-4-item-explore {
+    opacity: 0.6;
+    margin-top: 12px;
+    font-weight: 300;
+    font-size: 12px;
 }
