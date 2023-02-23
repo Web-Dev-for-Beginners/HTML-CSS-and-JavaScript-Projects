@@ -1,26 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Poppins:wght@300&display=swap');
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+    display: flex;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #343F4F;
 }
-
-h1 {
-    color: white;
-    text-align: center;
-    line-height: 1;
-    letter-spacing: 0.211em;
-    font-size: 34px;
-}
-
-/*Mobile Screen */
-@media (max-aspect-ratio: 16/9) {
-    h1 {
-        line-height: 2;
-        letter-spacing: 0.111em;
-        font-size: 24px;
-    }
-}
-/*Mobile Screen */
 
 header {
     min-height: 100vh;
@@ -51,4 +38,198 @@ header {
     align-items: center;
     z-index: 999;
     transition: 0.1s linear;
+}
+
+/** Heading Styles Start **/
+.waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
+    font-size: 3.7rem;
+}
+
+.waviy span {
+    font-family: Open Sans, Impact;
+    position: relative;
+    display: inline-block;
+    background: -webkit-linear-gradient(35deg, rgb(0, 140, 255), #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+
+}
+
+@keyframes waviy {
+
+    0%,
+    40%,
+    100% {
+        transform: translateY(0)
+    }
+
+    20% {
+        transform: translateY(-20px)
+    }
+}
+
+/** Heading Styles End **/
+
+/** Sub Heading Styles Start **/
+h1 {
+    position: relative;
+    font-family: sans-serif;
+    margin-top: 5%;
+    font-weight: 700;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+
+    100% {
+        background-position: 500%;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    h1 {
+        line-height: 2;
+        letter-spacing: 0.111em;
+        font-size: 24px;
+    }
+}
+
+/** Sub Heading Styles End **/
+
+
+/** Footer Styles Start **/
+p {
+    top: 100px;
+    color: white;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 0.011em;
+    font-size: 20px;
+    z-index: 100;
+}
+
+p span {
+    font-size: 28px;
+    color: rgb(0, 140, 255);
+}
+
+/** Footer Styles Start **/
+
+/*Carousel Styles Start*/
+.wrapper {
+    max-width: 1200px;
+    position: relative;
+    top: 2%;
+}
+
+.wrapper i {
+    top: 50%;
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 46px;
+    background: rgb(0, 140, 255);
+    color: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.wrapper i:first-child {
+    left: -23px;
+    display: none;
+    z-index: 2;
+}
+
+.wrapper i:last-child {
+    right: -23px;
+    z-index: 2;
+}
+
+.wrapper .carousel {
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging video {
+    pointer-events: none;
+}
+
+.carousel video {
+    height: 340px;
+    margin-left: 14px;
+    width: calc(100%/3);
+}
+
+.carousel video:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.carousel video:first-child {
+    margin-left: 0px;
+}
+
+/*Carousel Styles Start*/
+
+@media screen and (max-width:900px) {
+    .carousel video {
+        width: calc(100%/2);
+    }
+
+    .waviy {
+        font-size: 2.7rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .carousel video {
+        width: 100%;
+    }
+
+    .waviy {
+        font-size: 1.7rem;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    p span {
+        font-size: 25px;
+    }
 }
