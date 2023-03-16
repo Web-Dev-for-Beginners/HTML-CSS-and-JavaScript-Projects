@@ -1,0 +1,74 @@
+
+body{
+    margin: 0;
+}
+
+.full{
+    display: inline-flex;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    border: 0;
+    padding: 0;
+}
+
+.left{
+    margin: 0;
+    height: 740px;
+    width: 50%;
+    background-color: rgb(62, 154, 246);
+}
+.right{
+    margin: 0;
+    height: 740px;
+    width: 50%;
+    background-color: dodgerblue;
+    
+}
+
+/* converter */
+
+.fcal{
+    background-color: aliceblue;
+    height: 150px;
+    width: 500px;
+    position: absolute;
+    left: 34%;
+    top: 40%;
+    display: inline-flex;
+    border-radius: 10%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.cel{
+    display: block;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+.faren{
+    display: block;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+.btn{
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    z-index: 5;
+    height: 50px;
+    width: 150px;
+    border-radius: 20%;
+    background-color:aliceblue; /*rgb(89, 169, 172);*/
+    color: black;
+    font-size: 1.2rem;
+
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(234, 239, 245);
+    border: 9px;
+    font-size: 1.3rem;
+    border-color: black;
+}
